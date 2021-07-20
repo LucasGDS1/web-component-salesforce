@@ -1,0 +1,15 @@
+<template>
+    <lightning-card  title={welcome}>
+       <div class="slds-card__body slds-card__body_inner">
+           <div class="slds-grid slds-wrap">
+               <div class="slds-col slds-size_6-of-12 slds-var-p-around_xxx-small">
+                   <lightning-input label="Total currency in account" disabled value={totalCurrency}></lightning-input>
+               </div>
+               <div class="slds-col slds-size_6-of-12 slds-var-p-around_xxx-small">
+                    <lightning-input label="Value expense" onchange={handleTotalExpense}></lightning-input>
+               </div>
+           </div>
+            <lightning-input label="Total Expenses" class="slds-size_3-of-12" disabled value={totalExpense}></lightning-input>
+       </div>
+    </lightning-card>
+</template>
