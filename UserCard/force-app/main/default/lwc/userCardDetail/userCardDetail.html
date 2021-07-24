@@ -1,0 +1,11 @@
+<template>
+    <div class="container">
+        <template for:each={users} for:item="user">
+            <div key={user.FirstName} class="slds-var-p-around_xxx-small">
+                <div class="slds-box">
+                    <span>{user.FirstName}</span>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>
